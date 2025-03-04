@@ -1,17 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package projects;
 
 import java.util.Scanner;
 
 public class projects {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         Scanner datoIngresado = new Scanner(System.in);
@@ -19,93 +11,92 @@ public class projects {
         int opcion;
 
         do {
-            // Menú de selección de ejercicios
+
             System.out.println("\nSeleccione el número del ejercicio a ejecutar (1-27) o 0 para salir:");
             opcion = datoIngresado.nextInt();
 
             switch (opcion) {
                 case 1:
-                    new RegistroParqueadero().correrRegistroParqueadero();
+                    new Ejercicio1AscensorPiso().correrEjercicio1();
                     break;
                 case 2:
-                    new CarritoCompras().correrCarritoCompras();
+                    new Ejercicio2AscensorLimitePeso().correrEjercicio2();
                     break;
                 case 3:
-                    new AgendaContactos().correrAgendaContactos();
+                    new Ejercicio3SensorTemperatura().correrEjercicio3();
                     break;
                 case 4:
-                    new SumaNumeros().correrSumaNumeros();
+                    new Ejercicio4SensorTemperaturaUmbral().correrEjercicio4();
                     break;
                 case 5:
-                    new RegistroVentas().correrRegistroVentas();
+                    new Ejercicio5AscensorPisoTemperatura().correrEjercicio5();
                     break;
                 case 6:
-                    new RegistroParqueadero().correrRegistroParqueadero();
+                    new Ejercicio6TiendaTresProductos().correrEjercicio6();
                     break;
                 case 7:
-                    new CarritoCompras().correrCarritoCompras();
+                    new Ejercicio7IMC().correrEjercicio7();
                     break;
                 case 8:
-                    new AgendaContactos().correrAgendaContactos();
+                    new Ejercicio8Cine().correrEjercicio8();
                     break;
                 case 9:
-                    new SumaNumeros().correrSumaNumeros();
+                    new Ejercicio9Campeonato().correrEjercicio9();
                     break;
                 case 10:
-                    new RegistroVentas().correrRegistroVentas();
+                    System.out.println("Este ejercicio se me olvidó, los siento :(");
                     break;  
                 case 11:
-                    new RegistroParqueadero().correrRegistroParqueadero();
+                    new Ejercicio11CajeroAutomatico().correrEjercicio11();
                     break;
                 case 12:
-                    new CarritoCompras().correrCarritoCompras();
+                    new Ejercicio12TiendaLinea().correrEjercicio12();
                     break;
                 case 13:
-                    new AgendaContactos().correrAgendaContactos();
+                    new Ejercicio13Impresora().correrEjercicio13();
                     break;
                 case 14:
-                    new SumaNumeros().correrSumaNumeros();
+                    new Ejercicio14ViajeCoche().correrEjercicio14();
                     break;
                 case 15:
-                    new RegistroVentas().correrRegistroVentas();
+                    new Ejercicio15AdivinaNumero().correrEjercicio15();
                     break;
                 case 16:
-                    new RegistroParqueadero().correrRegistroParqueadero();
+                    new Ejercicio16Juego1A100().correrEjercicio16();
                     break;
                 case 17:
-                    new CarritoCompras().correrCarritoCompras();
+                    new Ejercicio17RegistroBibliotecas().correrEjercicio17();
                     break;
                 case 18:
-                    new AgendaContactos().correrAgendaContactos();
+                    new Ejercicio18MenuComidasRapidas().correrEjercicio18();
                     break;
                 case 19:
-                    new SumaNumeros().correrSumaNumeros();
+                    new Ejercicio19RangoTemperatura().correrEjercicio19();
                     break;
                 case 20:
-                    new RegistroVentas().correrRegistroVentas();
+                    new Ejercicio20ResultadoExamenesAprobado().correrEjercicio20();
                     break;  
                 case 21:
-                    new AgendaContactos().correrAgendaContactos();
+                    new Ejercicio21Tareas().correrEjercicio21();
                     break;
                 case 22:
-                    new SumaNumeros().correrSumaNumeros();
+                    new Ejercicio22ResumenTotalVentas().correrEjercicio22();
                     break;
                 case 23:
-                    new RegistroVentas().correrRegistroVentas();
+                    new Ejercicio23Parqueadero().correrEjercicio23();
                     break;
                 case 24:
-                    new RegistroParqueadero().correrRegistroParqueadero();
+                    new Ejercicio24TiendaVirtual().correrEjercicio24();
                     break;
                 case 25:
-                    new CarritoCompras().correrCarritoCompras();
+                    new Ejercicio25AgendaContactos().correrEjercicio25();
                     break;
                 case 26:
-                    new AgendaContactos().correrAgendaContactos();
+                    new Ejercicio26ListaNumeros().correrEjercicio26();
                     break;
                 case 27:
-                    new SumaNumeros().correrSumaNumeros();
+                    new Ejercicio27ProcesoTiendaVentas().correrEjercicio27();
                     break;    
-                // Aquí agregas los demás ejercicios del 6 al 27 con el mismo patrón
                 case 0:
                     System.out.println("Saliendo del programa...");
                     break;
@@ -114,7 +105,6 @@ public class projects {
             }
 
         } while (opcion != 0);
-
         datoIngresado.close();
     }
         
